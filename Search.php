@@ -121,7 +121,7 @@
         <li><a href="Map.html">Map</a></li>
         <li><a href="Chart.html">Chart</a></li>
         <li><a href="Contact.html">Contact</a></li>
-        <li><a href="Login.html">Login</a></li>
+        <li><a href="Login.php">Login</a></li>
     </ul>
 
     <h2>Search</h2>
@@ -137,7 +137,7 @@
                 <li><a href="#" onclick=SJ()>San Jose</a></li>
                 <li><a href="#" onclick=SF()>San Francisco</a></li>
                 <li><a href="#" onclick=Fresno()>Fresno</a></li>
-                <li><a href="#">Sacramento</a></li>
+                <li><a href="#" onclick=Sacramento()>Sacramento</a></li>
                 <li><a href="#">Long Beach</a></li>
                 <li><a href="#">Oakland</a></li>
                 <li><a href="#">Bakersfield</a></li>
@@ -259,6 +259,17 @@
                 document.getElementById('pressure').value = '1024 hPa'
                 document.getElementById('wind').value = '4.63 m/s'
                 document.getElementById('fire').value = '4 %'
+            }
+
+            function Sacramento() {
+                document.getElementById('location').value = 'Sacramento'
+                document.getElementById('longitude').value = '-121.478851'
+                document.getElementById('latitude').value = '38.575764'
+                document.getElementById('temperature').value = '56°F'
+                document.getElementById('humidity').value = '47%' 
+                document.getElementById('pressure').value = '1025 hPa'
+                document.getElementById('wind').value = '4.63 m/s'
+                document.getElementById('fire').value = '2.3 %'
             }
         </script>
 </body>
