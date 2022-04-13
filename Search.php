@@ -138,10 +138,10 @@
                 <li><a href="#" onclick=SF()>San Francisco</a></li>
                 <li><a href="#" onclick=Fresno()>Fresno</a></li>
                 <li><a href="#" onclick=Sacramento()>Sacramento</a></li>
-                <li><a href="#">Long Beach</a></li>
-                <li><a href="#">Oakland</a></li>
-                <li><a href="#">Bakersfield</a></li>
-                <li><a href="#">Anaheim</a></li>
+                <li><a href="#" onclick=LB()>Long Beach</a></li>
+                <li><a href="#" onclick=Oakland()>Oakland</a></li>
+                <li><a href="#" onclick=Bakersfield()>Bakersfield</a></li>
+                <li><a href="#" onclick=Anaheim()>Anaheim</a></li>
             </ul>
         </div>
 
@@ -270,6 +270,50 @@
                 document.getElementById('pressure').value = '1025 hPa'
                 document.getElementById('wind').value = '4.63 m/s'
                 document.getElementById('fire').value = '2.3 %'
+            }
+            
+            function LB() {
+                document.getElementById('location').value = 'Long Beach'
+                document.getElementById('longitude').value = '-118.193741'
+                document.getElementById('latitude').value = '33.770050'
+                document.getElementById('temperature').value = '65°F'
+                document.getElementById('humidity').value = '29%' 
+                document.getElementById('pressure').value = '1020 hPa'
+                document.getElementById('wind').value = '2.24 m/s'
+                document.getElementById('fire').value = '3.7 %'
+            }
+
+            function Oakland() {
+                document.getElementById('location').value = 'Oakland'
+                document.getElementById('longitude').value = '-122.271111'
+                document.getElementById('latitude').value = '37.804363'
+                document.getElementById('temperature').value = '54°F'
+                document.getElementById('humidity').value = '67%' 
+                document.getElementById('pressure').value = '1025 hPa'
+                document.getElementById('wind').value = '3.09 m/s'
+                document.getElementById('fire').value = '5.8 %'
+            }
+
+            function Bakersfield() {
+                document.getElementById('location').value = 'Bakersfield'
+                document.getElementById('longitude').value = '-119.018715'
+                document.getElementById('latitude').value = '35.373291'
+                document.getElementById('temperature').value = '54°F'
+                document.getElementById('humidity').value = '47%' 
+                document.getElementById('pressure').value = '1023 hPa'
+                document.getElementById('wind').value = '1.79 m/s'
+                document.getElementById('fire').value = '0.04 %'
+            }
+
+            function Anaheim() {
+                document.getElementById('location').value = 'Anaheim'
+                document.getElementById('longitude').value = '-117.914299'
+                document.getElementById('latitude').value = '33.836594'
+                document.getElementById('temperature').value = '65°F'
+                document.getElementById('humidity').value = '32%' 
+                document.getElementById('pressure').value = '1020 hPa'
+                document.getElementById('wind').value = '5.14 m/s'
+                document.getElementById('fire').value = '7.2 %'
             }
         </script>
 </body>
